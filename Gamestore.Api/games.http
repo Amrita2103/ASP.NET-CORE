@@ -1,0 +1,33 @@
+// verb and the location of the api endpoint we want to invoke 
+GET http://localhost:5162/games
+
+### 
+GET http://localhost:5162/games/9
+
+###
+POST http://localhost:5162/games
+Content-Type: application/json  
+
+{
+   "Name" : "Super Mario Bros. Wonder",
+   "Genre": "Platformer",
+   "Price": 59.99,
+   "ReleaseDate": "2023-10-20"
+
+
+}
+###
+PUT http://localhost:5162/games/4 
+Content-Type: application/json
+
+{
+    "id": 4,
+    "Name": "Super Mario Bros",
+    "genre": "Platformer 22",
+    "price": 98.76,
+    "releaseDate": "2023-10-20"
+  }
+
+### 
+  DELETE http://localhost:5162/games/4 
+
