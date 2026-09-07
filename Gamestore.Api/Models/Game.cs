@@ -1,4 +1,6 @@
 
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Gamestore.Api.Models;
 public class Game
 {
@@ -11,7 +13,8 @@ public class Game
    // this will be a foreign key from our game table into our genre table 
 
    // we can also have a FK like the following :
-   public int Genre_Id { get; set;}
+
+   public int GenreId { get; set;}
   // we can easily work directly with the genre_id instead of having to load 
   // the entire Genre Property 
   public decimal Price {get; set;}
